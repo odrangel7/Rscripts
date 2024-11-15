@@ -1,8 +1,8 @@
-
 # ExpectedCompoundsMZDeltaRT.R    06/11/2023    Oscar Rangel-Huerta.
 ### Norwegian Veterinary Institute
 # 
-# Creates a column with the delta RT for each expected compound using the Parent compound as reference.
+#The script is created to add some additional columns in the results view in Compound Discoverer 3.3 
+#Creates a column with the delta RT for each expected compound using the Parent compound as reference.
 ###The reference compound is considered as the only compound without transformation in the expected compounds table.
 # This calculation is useful for quickly determine the difference in RT for the expected compounds
 ###the idea is to integrate this RT in the name for naming compounds in later stages.
@@ -93,5 +93,3 @@ jsonfileconn <- file(jsonOutFile)
 writeLines(responseJSON2, jsonfileconn)
 
 close (jsonfileconn)
-
-
